@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.logo-register{
+    width:100px;
+}
+header{
+    background-color: rgb(128, 87, 55);
+}
+body{
+    background-color: cornsilk
+}
