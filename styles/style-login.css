@@ -1,0 +1,61 @@
+/**
+marrom - rgb(128, 87, 55)
+**/
+
+*{
+    margin:0;
+    padding:0;
+}
+.logo-index{
+    width:100px;
+}
+header{
+    background-color: rgb(128, 87, 55);
+    box-shadow: 1px 5px 10px 0px;
+}
+body{
+    background-color: cornsilk
+}
+.section-form-login{
+    background-color: rgba(128, 87, 55, 70%);
+    align-items: center;
+    width: 350px;
+    margin:0 auto;
+    margin-top: 17vh;
+    padding: 03%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 0px black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+input{
+    margin:0;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 05%;
+    text-align: center;
+    padding: 8px
+}
+button{
+    border:none;
+    background-color: rgb(128, 87, 55);
+    color:aliceblue;
+    padding:10px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: aliceblue;
+    color:black;
+}
+div{
+    margin:3px
+}
+.container-autologin{
+    margin-bottom: 15px;
+}
