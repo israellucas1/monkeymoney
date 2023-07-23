@@ -35,3 +35,13 @@ button:hover{
     margin: 0 auto;
     margin-top: 4%;
 }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  rgba(128, 87, 55, 0.835);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
