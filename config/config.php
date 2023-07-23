@@ -1,16 +1,18 @@
 <?php
 
-    $host = "sql108.infinityfree.com";
-    $username = "if0_34636307";
-    $senha = "uHnDNhrcq5X3";
-    $dbname = "if0_34636307_dados_user_	";
+    include_once('conexao.php');
 
-    $conexao = new mysqli($host, $username, $senha, $dbname);
+    $login = $_POST['login'];
+    $senha = $_POST['senha'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $nasc = $_POST['nasc'];
 
-    if($conexao->connect_errno){
-        echo "erro";
-    }else{
-        echo "conectado ao banco!";
-    }
-
-?>
+    $sql = 'INSERT INTO usuarios (login, senha, email, telefone, nasc) VALUES (:login, :senha, :email, :telefone, :nasc)';
+    $stmt = $conn->prepare($sql);
+    $stmt ->bindParam(':login',$login);
+    $stmt->bindParam(':senha',$senha);
+    $stmt->bindParam(':email',$email);
+    $stmt->bindParam(':telefone',$telefone);
+    $stmt->bindParam(':nasc',$nasc);
+    $stmt->execute();
