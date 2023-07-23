@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/styles/style-cadastro.css">
+</head>
+<body>
+    <header class="header-window-cadastro">
+        <ul>
+            <li><a href="/index.html"><img src="/Img/logo/LOGO-PRA-LUSCA-WITHOUT-MM.png" alt="monkeymoney-logo" class="logo-cadastro"></a></li>
+        </ul>
+    </header>
+    <main>
+        <form class="form-cadastro" id="form-cadastro">
+            <section class="container-dados-cadastro ">
+                <div class="itens-form">
+                    <input placeholder="Login" id="login" name="login">
+                    <input placeholder="E-mail" id="email" name="email" type="email">
+                </div>
+                <div class="itens-form">
+                    <label id="nascimento">Nascimento</label>
+                </div>
+                <div class="itens-form">
+                    <input placeholder="Telefone" type="number" id="telefone" name="telefone">
+                    <input type="date" id="data-nascimento" name="nascimento">
+                </div>
+                <div class="itens-form">
+                    <input placeholder="Senha" type="password" id="senha" name="senha">
+                    <input placeholder="Confirmar senha" type="password" id="confirma-senha" name="confirma-senha">
+                </div>
+            </section>
+            <section class="container-confirmar">
+                <div class="div-aceita">
+                    <input type="checkbox" id="checkbox-aceito">
+                    <p>Aceito os termo de politica de privacidade.</p>
+                </div>
+                <div>
+                    <button type="submit">Confirmar</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <script src="/scripts/cadastro_user.js"></script>
+</body>
+</html>

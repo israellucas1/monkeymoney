@@ -9,31 +9,32 @@
 <body>
     <header class="header-window-login">
         <ul>
-            <li><a href="/register/register_task.html"><img src="/Img/LOGO-PRA-LUSCA-WITHOUT-MM.png" alt="monkeymoney-logo" class="logo-index"></a></li>
+            <li><a href="/index.html"><img src="/Img/logo/LOGO-PRA-LUSCA-WITHOUT-MM.png" alt="monkeymoney-logo" class="logo-login"></a></li>
         </ul>
     </header>
     <main class="main-window-login">
         <section class="section-form-login">
-            <form clas="form-window-login">
+            <form class="form-window-login">
                 <div class="container-login">
                     <input placeholder="Login" id="login" name="login">
                 </div>
                 <div class="container-senha">
                     <input placeholder="Senha" type="password" id="senha" name="senha">
-                    <button onclick="" name="ver-senha">v</button>
+                    <button onclick="" name="ver-senha" id="ver-senha">v</button>
                 </div>
                 <div class="container-autologin">
                     <input type="checkbox" id="save-login" name="save-login">
                     <label>Login automatico</label>
                 </div>
                 <div class="container-buttons-login">
-                    <button type="submit" id="logar1">Entrar</button>
-                    <button onclick="" id="button-registrar">Registrar</button>
+                    <button type="submit" id="logar">Entrar</button>
                     <button onclick="" id="trocar-senha">Esqueci minha senha</button>
                 </div>
             </form>
+            <a href="/login/cadastrar.html"><button>Cadastrar</button></a>
         </section>
         <section></section>
     </main>
+    <script src="/scripts/login.js"></script>
 </body>
 </html>
