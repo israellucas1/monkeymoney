@@ -1,7 +1,7 @@
 <?php
 
     try {
-        $conn = new POD('mysql:host=sql108.infinityfree.com;dbname=if0_34636307_dados_user_','if0_34636307','uHnDNhrcq5X3');
+        $conn = new POD('mysql:host=localhost;dbname=monkeymoney','root','');
     } catch (PDOException $e) {
         $e->getMessage();
     }

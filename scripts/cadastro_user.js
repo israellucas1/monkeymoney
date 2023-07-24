@@ -10,7 +10,7 @@ formulario.addEventListener("submit", async event => {
         searchParams.append(par[0],par[1],par[2],par[3],par[4]);
     }
 
-    fetch('config.php',{
+    fetch('config/config.php',{
         method:'POST',
         body: formData
     }).then(function(response){
